@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>聊天</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/chat.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <a class="back-btn" href="message.html" style="text-decoration:none;display:flex;align-items:center;">
+            <span class="icon">◀返回</span>
+        </a>
+        <h1 style="text-align:right;flex:1;margin:auto;">聊天</h1>
+    </header>
+
+    <main class="main-content">
+        <div class="chat-container" id="chat-container">
+            <!-- 聊天内容将通过JS动态加载 -->
+        </div>
+        <div class="chat-footer">
+            <div class="input-area">
+                <input type="text" id="message-input" placeholder="输入消息...">
+                <button id="send-btn">发送</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/chat.js"></script>
+    <script src="../js/user.js"></script>
+</body>
+
+</html>

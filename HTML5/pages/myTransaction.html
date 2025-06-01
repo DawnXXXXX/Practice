@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的交易</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/myTransaction.css">
+    <link rel="stylesheet" href="../css/productCard.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <a class="back-btn" href="profile.html" style="text-decoration:none;display:flex;align-items:center;">
+            <span class="icon">◀返回</span>
+        </a>
+        <h1 style="text-align:right;flex:1;margin:auto;" id="page-title"></h1>
+    </header>
+
+    <main class="main-content">
+        <div class="product-grid" id="transaction-results">
+            <!-- 商品将通过JS动态加载 -->
+        </div>
+    </main>
+
+    <script src="../js/productsData.js"></script>
+    <script src="../js/user.js"></script>
+    <script src="../js/myTransaction.js"></script>
+</body>
+
+</html>

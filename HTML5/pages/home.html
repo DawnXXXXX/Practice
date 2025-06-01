@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>二手交易平台 - 首页</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/productCard.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-actions">
+            <button class="location" id="location-display">
+                <span id="location-text">定位中...</span>
+            </button>
+        </div>
+        <div class="search-bar">
+            <input type="search" id="search-input" placeholder="搜索商品..." inputmode="search">
+            <button class="search-btn" id="search-btn">🔍</button>
+        </div>
+        <button class="refresh-btn" id="refresh-btn">⬜</button>
+    </header>
+
+    <main class="main-content">
+        <section class="categories">
+            <div class="grid">
+                <div class="category-item" data-category="数码">数码</div>
+                <div class="category-item" data-category="服饰">服饰</div>
+                <div class="category-item" data-category="家居">家居</div>
+                <div class="category-item" data-category="图书">图书</div>
+                <div class="category-item" data-category="美妆">美妆</div>
+                <div class="category-item" data-category="运动">运动</div>
+                <div class="category-item" data-category="母婴">母婴</div>
+                <div class="category-item" data-category="其他">其他</div>
+            </div>
+        </section>
+        <section class="products">
+            <div class="product-grid">
+                <!-- JS读取更多商品卡片 -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <a href="home.html" class="tab active">
+            <span class="icon">🏠</span>
+            <span>首页</span>
+        </a>
+        <a href="post.html" class="tab">
+            <span class="icon">📝</span>
+            <span>发布</span>
+        </a>
+        <a href="message.html" class="tab">
+            <span class="icon">💬</span>
+            <span>消息</span>
+        </a>
+        <a href="profile.html" class="tab">
+            <span class="icon">👤</span>
+            <span>我的</span>
+        </a>
+    </footer>
+
+    <script src="../js/productsData.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/search.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>修改个人信息</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/edit-profile.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <a class="back-btn" href="settings.html" style="text-decoration:none;display:flex;align-items:center;">
+            <span class="icon">◀返回</span>
+        </a>
+        <h1 style="text-align:right;flex:1;margin:auto;">修改信息</h1>
+    </header>
+
+    <main class="main-content">
+        <form id="edit-profile-form">
+            <div class="section">
+                <h3>基本信息</h3>
+                <div class="list">
+                    <div class="list-item">
+                        <span class="icon">👤</span>
+                        <input type="text" id="username" placeholder="请输入昵称" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>头像设置</h3>
+                <div class="avatar-upload">
+                    <img id="avatar-preview" src="" alt="头像预览">
+                    <input type="file" id="avatar-input" accept="image/*" style="display:none;">
+                    <label for="avatar-input" class="upload-btn">选择新头像</label>
+                </div>
+            </div>
+
+            <button type="submit" class="save-btn">保存修改</button>
+        </form>
+    </main>
+
+    <script src="../js/user.js"></script>
+    <script src="../js/edit-profile.js"></script>
+</body>
+</html>

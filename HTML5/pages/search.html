@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>二手交易平台 - 搜索结果</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/search.css">
+    <link rel="stylesheet" href="../css/productCard.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <a class="back-btn" href="home.html" style="text-decoration:none;display:flex;align-items:center;">
+            <span class="icon">◀返回</span>
+        </a>
+        <div class="search-bar">
+            <input type="search" id="search-input" placeholder="搜索商品..." inputmode="search">
+            <button class="search-btn" id="search-btn">🔍</button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="filter-section">
+            <div class="filter-item" id="filter-recommend">
+                <span class="text">推荐</span>
+            </div>
+            <div class="filter-item" id="filter-time">
+                <span class="text">新发</span>
+            </div>
+            <div class="filter-item" id="filter-price">
+                <span>价格</span>
+                <span class="icon" style="display:none;">🔺</span> <!-- 第一个.icon元素 -->
+                <span class="icon" style="display:inline;">🔻</span> <!-- 第二个.icon元素 -->
+            </div>
+            <div class="filter-item" id="filter-category">
+                <span>分类</span>
+                <span class="icon">🔻</span>
+            </div>
+        </div>
+
+        <div class="product-grid" id="search-results">
+            <!-- 搜索结果将通过JS动态加载 -->
+        </div>
+    </main>
+
+    <script src="../js/user.js"></script>
+    <script src="../js/productsData.js"></script>
+    <script src="../js/search.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>商品详情</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/product-detail.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <a class="back-btn" id="back-btn" href="./home.html" style="text-decoration:none;display:flex;align-items:center;">
+            <span class="icon">◀返回</span>
+        </a>
+        <h1 style="text-align:right;flex:1;margin:auto;">商品详情</h1>
+    </header>
+
+    <main class="main-content">
+        <section class="product-gallery">
+            <div class="main-image" style="position:relative">
+                <img id="product-image" src="" alt="商品主图">
+            </div>
+        </section>
+
+        <section class="product-info">
+            <h2 id="product-name"></h2>
+            <p class="price" id="product-price"></p>
+            <p class="location" id="product-location"></p>
+
+            <div class="product-description">
+                <h3>商品描述</h3>
+                <p id="product-description"></p>
+                <div class="product-actions" id="product-actions" style="display:none;">
+                    <button id="edit-btn">编辑</button>
+                    <button id="delete-btn">删除</button>
+                </div>
+            </div>
+
+            <div class="seller-info">
+                <h3>卖家信息</h3>
+                <div class="seller">
+                    <img id="seller-avatar" src="" alt="卖家头像">
+                    <div>
+                        <p id="seller-name">卖家昵称</p>
+                        <p class="rating" id="seller-rating"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 历史交易评价区域 -->
+            <div class="reviews">
+                <h3>历史交易评价</h3>
+                <div class="review-list" id="review-list">
+                    <!-- 评价将通过JS动态加载 -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <button class="chat-btn" onclick="startChatWithSeller()">💬 卖家</button>
+        <button class="chat-btn" id="favorite-btn">☆ 收藏</button>
+        <button class="buy-btn" id="buy-btn">立即购买</button>
+    </footer>
+
+    <script src="../js/product-detail.js"></script>
+    <script src="../js/user.js"></script>
+    <script src="../js/productsData.js"></script>
+</body>
+
+</html>

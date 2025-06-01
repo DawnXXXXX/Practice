@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>二手交易平台 - 个人中心</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+
+<body>
+    <header class="profile-header" onclick="window.location.href='edit-profile.html'">
+        <div class="user-info">
+            <div class="avatar">
+                <img src="../images/avatar- (10).png" alt="用户头像">
+            </div>
+            <div class="user-detail">
+                <h2>未登录</h2>
+                <p></p>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="profile-section">
+            <h3>我的交易</h3>
+            <div class="profile-grid">
+                <div class="profile-item" onclick="window.location.href='myTransaction.html?tab=posted'">
+                    <span class="icon">📝</span>
+                    <span>我发布的</span>
+                </div>
+                <div class="profile-item" onclick="window.location.href='myTransaction.html?tab=bought'">
+                    <span class="icon">🛒</span>
+                    <span>我买到的</span>
+                </div>
+                <div class="profile-item" onclick="window.location.href='myTransaction.html?tab=sold'">
+                    <span class="icon">💰</span>
+                    <span>我卖出的</span>
+                </div>
+                <div class="profile-item" onclick="window.location.href='myTransaction.html?tab=favorites'">
+                    <span class="icon">❤️</span>
+                    <span>我的收藏</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="profile-section">
+            <h3>其他功能</h3>
+            <div class="profile-list">
+                <div class="profile-list-item" onclick="window.location.href='settings.html'">
+                    <span class="icon">⚙️</span>
+                    <span>设置</span>
+                </div>
+                <div class="profile-list-item" onclick="showAboutDialog()">
+                    <span class="icon">&nbsp;✉&nbsp;</span>
+                    <span>关于我们</span>
+                </div>
+                <div class="profile-list-item">
+                    <div class="logout-btn" style="height: 100%; width: 100%;" <span class="icon">
+                        &nbsp;&nbsp;↩&nbsp;&nbsp;</span>
+                        <span>退出登录</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <a href="home.html" class="tab">
+            <span class="icon">🏠</span>
+            <span>首页</span>
+        </a>
+        <a href="post.html" class="tab">
+            <span class="icon">📝</span>
+            <span>发布</span>
+        </a>
+        <a href="message.html" class="tab">
+            <span class="icon">💬</span>
+            <span>消息</span>
+        </a>
+        <a href="profile.html" class="tab active">
+            <span class="icon">👤</span>
+            <span>我的</span>
+        </a>
+    </footer>
+
+    <script src="../js/profile.js"></script>
+    <script src="../js/logout.js"></script>
+</body>
+
+</html>
