@@ -1,0 +1,141 @@
+/* 基础重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 启动屏幕样式 */
+.splash-screen {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6e8efb, #ff9966);
+    position: relative;
+    overflow: hidden;
+}
+
+/* 背景动画 */
+.background-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255,255,255,0.1) 25%, transparent 25%),
+                linear-gradient(-45deg, rgba(255,255,255,0.1) 25%, transparent 25%);
+    background-size: 60px 60px;
+    animation: moveBackground 20s linear infinite;
+}
+
+/* Logo容器样式 */
+.logo-container {
+    text-align: center;
+    z-index: 1;
+    animation: fadeInUp 1s ease-out;
+}
+
+.logo {
+    margin-bottom: 40px;
+}
+
+.logo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 24px;
+    background: white;
+    padding: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    animation: float 3s ease-in-out infinite;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 20px 0 10px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.subtitle {
+    color: rgba(255,255,255,0.9);
+    font-size: 16px;
+    letter-spacing: 4px;
+    margin-top: 10px;
+}
+
+/* 进度条样式 */
+.progress-bar {
+    width: 240px;
+    height: 4px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.progress {
+    height: 100%;
+    background: white;
+    border-radius: 4px;
+    animation: loading 2s ease-in-out infinite;
+}
+
+/* 装饰圆圈 */
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.1);
+    animation: ripple 4s linear infinite;
+}
+
+.circle-1 { width: 100px; height: 100px; }
+.circle-2 { width: 200px; height: 200px; animation-delay: -1s; }
+.circle-3 { width: 300px; height: 300px; animation-delay: -2s; }
+
+/* 动画关键帧 */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes loading {
+    0% { width: 0; }
+    50% { width: 100%; }
+    100% { width: 0; }
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0.8);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+@keyframes moveBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: 60px 60px; }
+}

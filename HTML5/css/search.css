@@ -1,0 +1,151 @@
+/* 搜索页面样式 */
+.main-content {
+    margin: 0;
+    padding: 0;
+}
+
+.filter-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    background: white;
+    border-bottom: 1px solid #eee;
+    padding: 10px 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.filter-item {  
+    width: 70px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #666;
+    border-radius: 15px;
+    background: #f5f5f5;
+    position: relative;
+}
+
+.filter-item .text {
+    text-align: center;
+    width: 100%;
+}
+.filter-item .icon {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+
+/* 筛选菜单样式 */
+.filter-menu {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 8px 0;
+    z-index: 1000;
+    max-height: 300px;
+    overflow-y: auto;
+    position: absolute;
+}
+
+.filter-menu-item {
+    padding: 10px 16px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.filter-menu-item:hover {
+    background: #f5f5f5;
+    
+}
+
+/* 筛选按钮激活状态 */
+.filter-item.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* 价格筛选图标样式 */
+.filter-item .icon:first-child {
+    display: none;
+}
+
+.filter-item .icon:last-child {
+    display: inline;
+}
+
+.filter-item.active .icon {
+    color: white;
+}
+
+/* 筛选菜单样式 */
+.filter-menu {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 8px 0;
+    z-index: 1000;
+    max-height: 300px;
+    overflow-y: auto;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 5px;
+}
+
+.filter-menu-item {
+    padding: 10px 16px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    white-space: nowrap;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+.filter-menu-item:hover {
+    background: #f5f5f5;
+    color: var(--primary-color);
+}
+
+/* 筛选按钮激活状态 */
+.filter-item.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* 价格筛选图标样式 */
+.filter-item .icon:first-child {
+    display: none;
+}
+
+.filter-item .icon:last-child {
+    display: inline;
+}
+
+.filter-item.active .icon {
+    color: white;
+}
+
+
+.product-prompt {
+    margin: 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.product-prompt p {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #666;
+    display: inline-block;
+}
+
+.product-grid {
+    padding: 15px;
+}

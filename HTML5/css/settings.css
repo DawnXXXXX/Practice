@@ -1,0 +1,29 @@
+.settings-list {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.settings-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+    color: #333;
+}
+
+.settings-item:last-child {
+    border-bottom: none;
+}
+
+.settings-item .icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.settings-item .arrow {
+    margin-left: auto;
+    color: #999;
+}

@@ -1,0 +1,107 @@
+/* 首页样式 */
+.main-content {
+    padding: 0;
+    padding-bottom: 100px; /* 预留底部导航栏高度 */
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-primary);
+    padding: 5px 10px;
+    margin-right: 15px;
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+
+    /* 去除按钮边框 */
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.location:hover {
+    background: rgba(0, 0, 0, 0.06);
+}
+
+.search-bar {
+    flex: 1;
+    position: relative;
+    background: var(--background);
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    margin-left: 8px;
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    color: var(--text-primary);
+    padding: 4px 0;
+    /* 去掉点击时的轮廓 */
+    outline: none;
+}
+
+.search-btn {
+    border: none;
+    background: transparent;
+    padding: 4px;
+    border-radius: 50%;
+    cursor: pointer;
+    /* 去掉悬停效果 */
+}
+
+.search-btn:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/* 分类区域样式 */
+.categories {
+    padding: 6px 12px;
+    background: var(--card-bg);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.category-item {
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    border-radius: 16px;
+    margin: 4px;
+    padding: 14px 6px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.category-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 刷新按钮样式 */
+.refresh-btn {
+    background: none;
+    border: none;
+    font-size: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* 调整定位按钮样式 */
+.location {
+    margin-right: 0;
+}
+.products {
+    padding: 15px;
+}

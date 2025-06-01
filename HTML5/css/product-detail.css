@@ -1,0 +1,187 @@
+/* 商品详情页样式 */
+.product-gallery {
+    background: #fff;
+    padding: 15px;
+}
+
+.main-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.product-info {
+    background: #fff;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.product-info h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-size: 22px;
+    color: #ff5e62;
+    font-weight: bold;
+    margin: 10px 0;
+    letter-spacing: 0.5px; /* 添加字母间距使数字更清晰 */
+}
+
+.location {
+    color: #666;
+    font-size: 14px;
+}
+
+.product-description {
+    margin: 20px 0;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.seller-info {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.seller {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.seller img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chat-btn, .buy-btn {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.chat-btn {
+    background: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+}
+
+.buy-btn {
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    color: white;
+}
+
+
+/* 历史交易评价样式 */
+.reviews {
+    background: #fff;
+    margin-top: 10px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.review-list {
+    margin-top: 10px;
+}
+
+.review-item {
+    display: flex;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.review-item:last-child {
+    border-bottom: none;
+}
+
+.review-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.review-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.review-content {
+    flex: 1;
+}
+
+.review-user {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.review-text {
+    color: #666;
+    line-height: 1.5;
+}
+
+.review-time {
+    font-size: 12px;
+    color: #999;
+    margin-top: 5px;
+}
+
+
+/* 已售出标记样式 */
+.sold-banner {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    background: rgba(255, 0, 0, 0.7);
+    color: white;
+    padding: 5px 15px;
+    transform: rotate(15deg);
+    font-weight: bold;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* 禁用状态的购买按钮样式 */
+.buy-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+
+.product-actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.product-actions button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#edit-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#delete-btn {
+    background-color: #f44336;
+    color: white;
+}
